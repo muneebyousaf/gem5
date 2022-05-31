@@ -19,8 +19,8 @@
 #include "base/compiler.hh"
 #include "base/cprintf.hh"
 
-#include "debug/RubySlicc.hh"
 #include "debug/RubyGenerated.hh"
+#include "debug/RubySlicc.hh"
 #include "mem/ruby/network/Network.hh"
 #include "mem/ruby/protocol/Directory_Controller.hh"
 #include "mem/ruby/protocol/Directory_Event.hh"

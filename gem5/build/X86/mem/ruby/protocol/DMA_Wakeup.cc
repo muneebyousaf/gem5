@@ -14,8 +14,8 @@
 
 #include "base/logging.hh"
 
-#include "debug/RubySlicc.hh"
 #include "debug/RubyGenerated.hh"
+#include "debug/RubySlicc.hh"
 #include "mem/ruby/protocol/DMA_Controller.hh"
 #include "mem/ruby/protocol/DMA_Event.hh"
 #include "mem/ruby/protocol/DMA_State.hh"

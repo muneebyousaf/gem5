@@ -1,38 +1,45 @@
 file /home/muneeb/gem5/gem5/build/systemc/SConscript,line 41:
 	Configure(confdir = build/systemc/.scons_config)
 scons: Configure: Checking whether __i386__ is declared... 
-build/systemc/.scons_config/conftest_28.c <-
+scons: Configure: "build/systemc/.scons_config/conftest_28.c" is up to date.
+scons: Configure: The original builder output was:
+  |build/systemc/.scons_config/conftest_28.c <-
+  |  |
+  |  |int main(void)
+  |  |{
+  |  |#ifndef __i386__
+  |  |    (void) __i386__;
+  |  |#endif
+  |  |    ;
+  |  |    return 0;
+  |  |}
+  |  |
   |
-  |int main(void)
-  |{
-  |#ifndef __i386__
-  |    (void) __i386__;
-  |#endif
-  |    ;
-  |    return 0;
-  |}
+scons: Configure: Building "build/systemc/.scons_config/conftest_28.o" failed in a previous run and all its sources are up to date.
+scons: Configure: The original builder output was:
+  |(B[m [      CC] [33msystemc/.scons_config/conftest_28[33m[1m.c[34m[1m -> [33m[1m.o(B[m
   |
-(B[m [      CC] [33msystemc/.scons_config/conftest_28[33m[1m.c[34m[1m -> [33m[1m.o(B[m
-build/systemc/.scons_config/conftest_28.c: In function 'main':
-build/systemc/.scons_config/conftest_28.c:5:12: error: '__i386__' undeclared (first use in this function)
-    5 |     (void) __i386__;
-      |            ^~~~~~~~
-build/systemc/.scons_config/conftest_28.c:5:12: note: each undeclared identifier is reported only once for each function it appears in
-scons: Configure: no
+scons: Configure: (cached) no
 
 scons: Configure: Checking whether __x86_64__ is declared... 
-build/systemc/.scons_config/conftest_29.c <-
+scons: Configure: "build/systemc/.scons_config/conftest_29.c" is up to date.
+scons: Configure: The original builder output was:
+  |build/systemc/.scons_config/conftest_29.c <-
+  |  |
+  |  |int main(void)
+  |  |{
+  |  |#ifndef __x86_64__
+  |  |    (void) __x86_64__;
+  |  |#endif
+  |  |    ;
+  |  |    return 0;
+  |  |}
+  |  |
   |
-  |int main(void)
-  |{
-  |#ifndef __x86_64__
-  |    (void) __x86_64__;
-  |#endif
-  |    ;
-  |    return 0;
-  |}
+scons: Configure: "build/systemc/.scons_config/conftest_29.o" is up to date.
+scons: Configure: The original builder output was:
+  |(B[m [      CC] [33msystemc/.scons_config/conftest_29[33m[1m.c[34m[1m -> [33m[1m.o(B[m
   |
-(B[m [      CC] [33msystemc/.scons_config/conftest_29[33m[1m.c[34m[1m -> [33m[1m.o(B[m
-scons: Configure: yes
+scons: Configure: (cached) yes
 
 
