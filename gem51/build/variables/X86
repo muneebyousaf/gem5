@@ -1,0 +1,4 @@
+NUMBER_BITS_PER_SET = '128'
+CPU_MODELS = 'AtomicSimpleCPU,O3CPU,TimingSimpleCPU'
+PROTOCOL = 'MESI_Two_Level'
+TARGET_ISA = 'x86'

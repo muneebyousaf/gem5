@@ -1,0 +1,380 @@
+file /home/muneeb/gem5/gem5/site_scons/gem5_scons/configure.py,line 158:
+	Configure(confdir = build/.scons_config)
+scons: Configure: Checking for linker -Wl,--as-needed support... 
+build/.scons_config/conftest_0.cc <-
+  |int main(int, char *[]) { return 0; }
+(B[m [     CXX] [33m.scons_config/conftest_0[33m[1m.cc[34m[1m -> [33m[1m.o(B[m
+(B[m [    LINK] [33m[33m[1m[34m[1m -> [33m[1m.scons_config/conftest_0(B[m
+scons: Configure: yes
+
+
+file /home/muneeb/gem5/gem5/site_scons/gem5_scons/configure.py,line 158:
+	Configure(confdir = build/.scons_config)
+scons: Configure: Checking for compiler -Wno-free-nonheap-object support... 
+build/.scons_config/conftest_1.cc <-
+  |// CheckCxxFlag DO NOTHING
+(B[m [     CXX] [33m.scons_config/conftest_1[33m[1m.cc[34m[1m -> [33m[1m.o(B[m
+scons: Configure: yes
+
+
+file /home/muneeb/gem5/gem5/site_scons/gem5_scons/configure.py,line 158:
+	Configure(confdir = build/.scons_config)
+scons: Configure: Checking for compiler -gz support... 
+build/.scons_config/conftest_2.cc <-
+  |// CheckCxxFlag DO NOTHING
+(B[m [     CXX] [33m.scons_config/conftest_2[33m[1m.cc[34m[1m -> [33m[1m.o(B[m
+scons: Configure: yes
+
+scons: Configure: Checking for linker -gz support... 
+build/.scons_config/conftest_3.cc <-
+  |int main(int, char *[]) { return 0; }
+(B[m [     CXX] [33m.scons_config/conftest_3[33m[1m.cc[34m[1m -> [33m[1m.o(B[m
+(B[m [    LINK] [33m[33m[1m[34m[1m -> [33m[1m.scons_config/conftest_3(B[m
+scons: Configure: yes
+
+
+file /home/muneeb/gem5/gem5/site_scons/gem5_scons/configure.py,line 158:
+	Configure(confdir = build/.scons_config)
+
+file /home/muneeb/gem5/gem5/site_scons/gem5_scons/configure.py,line 158:
+	Configure(confdir = build/.scons_config)
+scons: Configure: Checking for C header file Python.h... 
+build/.scons_config/conftest_5.c <-
+  |
+  |#include <Python.h>
+  |
+  |
+(B[m [      CC] [33m.scons_config/conftest_5[33m[1m.c[34m[1m -> [33m[1m.o(B[m
+scons: Configure: yes
+
+scons: Configure: Checking Python version... 
+build/.scons_config/conftest_6.cc <-
+  |
+  |#include <pybind11/embed.h>
+  |
+  |int
+  |main(int argc, char **argv) {
+  |    pybind11::scoped_interpreter guard{};
+  |    pybind11::exec(
+  |        "import sys\n"
+  |        "vi = sys.version_info\n"
+  |        "sys.stdout.write('%i.%i.%i' % (vi.major, vi.minor, vi.micro));\n");
+  |    return 0;
+  |}
+  |    
+(B[m [     CXX] [33m.scons_config/conftest_6[33m[1m.cc[34m[1m -> [33m[1m.o(B[m
+(B[m [    LINK] [33m[33m[1m[34m[1m -> [33m[1m.scons_config/conftest_6(B[m
+build/.scons_config/conftest_6 > build/.scons_config/conftest_6.out
+scons: Configure: 3.8.10
+
+
+file /home/muneeb/gem5/gem5/site_scons/gem5_scons/configure.py,line 158:
+	Configure(confdir = build/.scons_config)
+scons: Configure: Checking for accept(0,0,0) in C++ library None... 
+build/.scons_config/conftest_7.cpp <-
+  |
+  |
+  |#include "sys/socket.h"
+  |
+  |int
+  |main() {
+  |  accept(0,0,0);
+  |return 0;
+  |}
+  |
+(B[m [     CXX] [33m.scons_config/conftest_7[33m[1m.cpp[34m[1m -> [33m[1m.o(B[m
+(B[m [    LINK] [33m[33m[1m[34m[1m -> [33m[1m.scons_config/conftest_7(B[m
+scons: Configure: yes
+
+scons: Configure: Checking for zlibVersion() in C++ library z... 
+build/.scons_config/conftest_8.cpp <-
+  |
+  |
+  |#include "zlib.h"
+  |
+  |int
+  |main() {
+  |  zlibVersion();
+  |return 0;
+  |}
+  |
+(B[m [     CXX] [33m.scons_config/conftest_8[33m[1m.cpp[34m[1m -> [33m[1m.o(B[m
+(B[m [    LINK] [33m[33m[1m[34m[1m -> [33m[1m.scons_config/conftest_8(B[m
+scons: Configure: yes
+
+
+file /home/muneeb/gem5/gem5/site_scons/gem5_scons/configure.py,line 158:
+	Configure(confdir = build/.scons_config)
+scons: Configure: Checking for C library tcmalloc... 
+build/.scons_config/conftest_9.c <-
+  |
+  |
+  |
+  |int
+  |main() {
+  |  
+  |return 0;
+  |}
+  |
+(B[m [      CC] [33m.scons_config/conftest_9[33m[1m.c[34m[1m -> [33m[1m.o(B[m
+(B[m [    LINK] [33m[33m[1m[34m[1m -> [33m[1m.scons_config/conftest_9(B[m
+scons: Configure: yes
+
+
+file /home/muneeb/gem5/gem5/site_scons/gem5_scons/configure.py,line 158:
+	Configure(confdir = build/.scons_config)
+scons: Configure: Checking for C header file linux/kvm.h... 
+build/.scons_config/conftest_10.c <-
+  |
+  |#include <linux/kvm.h>
+  |
+  |
+(B[m [      CC] [33m.scons_config/conftest_10[33m[1m.c[34m[1m -> [33m[1m.o(B[m
+scons: Configure: yes
+
+scons: Configure: Checking for timer_create(CLOCK_MONOTONIC, NULL, NULL) in C library None... 
+build/.scons_config/conftest_11.c <-
+  |
+  |
+  |#include "time.h"
+  |#include "signal.h"
+  |
+  |int
+  |main() {
+  |  timer_create(CLOCK_MONOTONIC, NULL, NULL);
+  |return 0;
+  |}
+  |
+(B[m [      CC] [33m.scons_config/conftest_11[33m[1m.c[34m[1m -> [33m[1m.o(B[m
+(B[m [    LINK] [33m[33m[1m[34m[1m -> [33m[1m.scons_config/conftest_11(B[m
+/usr/bin/ld: build/.scons_config/conftest_11.o: in function `main':
+conftest_11.c:(.text+0x18): undefined reference to `timer_create'
+collect2: error: ld returned 1 exit status
+scons: Configure: no
+
+scons: Configure: Checking for timer_create(CLOCK_MONOTONIC, NULL, NULL) in C library rt... 
+build/.scons_config/conftest_12.c <-
+  |
+  |
+  |#include "time.h"
+  |#include "signal.h"
+  |
+  |int
+  |main() {
+  |  timer_create(CLOCK_MONOTONIC, NULL, NULL);
+  |return 0;
+  |}
+  |
+(B[m [      CC] [33m.scons_config/conftest_12[33m[1m.c[34m[1m -> [33m[1m.o(B[m
+(B[m [    LINK] [33m[33m[1m[34m[1m -> [33m[1m.scons_config/conftest_12(B[m
+scons: Configure: yes
+
+scons: Configure: Checking size of struct kvm_xsave ... 
+build/.scons_config/conftest_13.c <-
+  |#include <linux/kvm.h>
+  |#include <stdlib.h>
+  |#include <stdio.h>
+  |int main(void) {
+  |    printf("%d", (int)sizeof(struct kvm_xsave));
+  |    return 0;
+  |}
+  |    
+(B[m [      CC] [33m.scons_config/conftest_13[33m[1m.c[34m[1m -> [33m[1m.o(B[m
+(B[m [    LINK] [33m[33m[1m[34m[1m -> [33m[1m.scons_config/conftest_13(B[m
+build/.scons_config/conftest_13 > build/.scons_config/conftest_13.out
+scons: Configure: yes
+
+scons: Configure: Checking for member exclude_host in struct perf_event_attr...
+build/.scons_config/conftest_14.cc <-
+  |
+  |#include <linux/perf_event.h>
+  |int main(){
+  |  struct perf_event_attr test;
+  |  (void)test.exclude_host;
+  |  return 0;
+  |};
+  |
+(B[m [     CXX] [33m.scons_config/conftest_14[33m[1m.cc[34m[1m -> [33m[1m.o(B[m
+scons: Configure: yes
+
+
+file /home/muneeb/gem5/gem5/site_scons/gem5_scons/configure.py,line 158:
+	Configure(confdir = build/.scons_config)
+scons: Configure: Checking for char temp; backtrace_symbols_fd((void *)&temp, 0, 0) in C library None... 
+build/.scons_config/conftest_15.c <-
+  |
+  |
+  |#include "execinfo.h"
+  |
+  |int
+  |main() {
+  |  char temp; backtrace_symbols_fd((void *)&temp, 0, 0);
+  |return 0;
+  |}
+  |
+(B[m [      CC] [33m.scons_config/conftest_15[33m[1m.c[34m[1m -> [33m[1m.o(B[m
+(B[m [    LINK] [33m[33m[1m[34m[1m -> [33m[1m.scons_config/conftest_15(B[m
+scons: Configure: yes
+
+
+file /home/muneeb/gem5/gem5/site_scons/gem5_scons/configure.py,line 158:
+	Configure(confdir = build/.scons_config)
+scons: Configure: Checking for shm_open("/test", 0, 0) in C library None... 
+build/.scons_config/conftest_16.c <-
+  |
+  |
+  |#include "sys/mman.h"
+  |
+  |int
+  |main() {
+  |  shm_open("/test", 0, 0);
+  |return 0;
+  |}
+  |
+(B[m [      CC] [33m.scons_config/conftest_16[33m[1m.c[34m[1m -> [33m[1m.o(B[m
+(B[m [    LINK] [33m[33m[1m[34m[1m -> [33m[1m.scons_config/conftest_16(B[m
+scons: Configure: yes
+
+
+file /home/muneeb/gem5/gem5/site_scons/gem5_scons/configure.py,line 158:
+	Configure(confdir = build/.scons_config)
+scons: Configure: Checking for C header file fenv.h... 
+build/.scons_config/conftest_17.c <-
+  |
+  |#include <fenv.h>
+  |
+  |
+(B[m [      CC] [33m.scons_config/conftest_17[33m[1m.c[34m[1m -> [33m[1m.o(B[m
+scons: Configure: yes
+
+scons: Configure: Checking for C header file png.h... 
+build/.scons_config/conftest_18.c <-
+  |
+  |#include <png.h>
+  |
+  |
+(B[m [      CC] [33m.scons_config/conftest_18[33m[1m.c[34m[1m -> [33m[1m.o(B[m
+build/.scons_config/conftest_18.c:2:10: fatal error: png.h: No such file or directory
+    2 | #include <png.h>
+      |          ^~~~~~~
+compilation terminated.
+scons: Configure: no
+
+scons: Configure: Checking for clock_nanosleep(0,0,NULL,NULL) in C library None... 
+build/.scons_config/conftest_19.c <-
+  |
+  |
+  |#include "time.h"
+  |
+  |int
+  |main() {
+  |  clock_nanosleep(0,0,NULL,NULL);
+  |return 0;
+  |}
+  |
+(B[m [      CC] [33m.scons_config/conftest_19[33m[1m.c[34m[1m -> [33m[1m.o(B[m
+(B[m [    LINK] [33m[33m[1m[34m[1m -> [33m[1m.scons_config/conftest_19(B[m
+scons: Configure: yes
+
+scons: Configure: Checking for C header file valgrind/valgrind.h... 
+build/.scons_config/conftest_20.c <-
+  |
+  |#include "valgrind/valgrind.h"
+  |
+  |
+(B[m [      CC] [33m.scons_config/conftest_20[33m[1m.c[34m[1m -> [33m[1m.o(B[m
+build/.scons_config/conftest_20.c:2:10: fatal error: valgrind/valgrind.h: No such file or directory
+    2 | #include "valgrind/valgrind.h"
+      |          ^~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+scons: Configure: no
+
+
+file /home/muneeb/gem5/gem5/site_scons/gem5_scons/configure.py,line 158:
+	Configure(confdir = build/.scons_config)
+build/.scons_config/conftest_21.cc <-
+  |
+  |        int main() {return 0;}
+  |        namespace [[gnu::deprecated("Test namespace deprecation")]]
+  |        test_deprecated_namespace {}
+  |    
+(B[m [     CXX] [33m.scons_config/conftest_21[33m[1m.cc[34m[1m -> [33m[1m.o(B[m
+build/.scons_config/conftest_21.cc:4:9: error: 'deprecated' attribute directive ignored [-Werror=attributes]
+    4 |         test_deprecated_namespace {}
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~
+cc1plus: all warnings being treated as errors
+
+file /home/muneeb/gem5/gem5/site_scons/gem5_scons/configure.py,line 158:
+	Configure(confdir = build/.scons_config)
+scons: Configure: Checking for pkg-config package hdf5-serial... 
+pkg-config hdf5-serial
+scons: Configure: no
+
+scons: Configure: Checking for pkg-config package hdf5... 
+pkg-config hdf5
+scons: Configure: no
+
+scons: Configure: Checking for H5Fcreate("", 0, 0, 0) in C library hdf5... 
+build/.scons_config/conftest_24.c <-
+  |
+  |
+  |#include "hdf5.h"
+  |
+  |int
+  |main() {
+  |  H5Fcreate("", 0, 0, 0);
+  |return 0;
+  |}
+  |
+(B[m [      CC] [33m.scons_config/conftest_24[33m[1m.c[34m[1m -> [33m[1m.o(B[m
+build/.scons_config/conftest_24.c:3:10: fatal error: hdf5.h: No such file or directory
+    3 | #include "hdf5.h"
+      |          ^~~~~~~~
+compilation terminated.
+scons: Configure: no
+
+
+file /home/muneeb/gem5/gem5/site_scons/gem5_scons/configure.py,line 158:
+	Configure(confdir = build/.scons_config)
+scons: Configure: Checking for pkg-config package protobuf... 
+pkg-config protobuf
+scons: Configure: yes
+
+scons: Configure: Checking for GOOGLE_PROTOBUF_VERIFY_VERSION in C++ library protobuf... 
+build/.scons_config/conftest_26.cpp <-
+  |
+  |
+  |#include "google/protobuf/message.h"
+  |
+  |int
+  |main() {
+  |  GOOGLE_PROTOBUF_VERIFY_VERSION;
+  |return 0;
+  |}
+  |
+(B[m [     CXX] [33m.scons_config/conftest_26[33m[1m.cpp[34m[1m -> [33m[1m.o(B[m
+(B[m [    LINK] [33m[33m[1m[34m[1m -> [33m[1m.scons_config/conftest_26(B[m
+scons: Configure: yes
+
+
+file /home/muneeb/gem5/gem5/site_scons/gem5_scons/configure.py,line 158:
+	Configure(confdir = build/.scons_config)
+scons: Configure: Checking for C header file linux/if_tun.h... 
+build/.scons_config/conftest_27.c <-
+  |
+  |#include <linux/if_tun.h>
+  |
+  |
+(B[m [      CC] [33m.scons_config/conftest_27[33m[1m.c[34m[1m -> [33m[1m.o(B[m
+scons: Configure: yes
+
+
+file /home/muneeb/gem5/gem5/site_scons/gem5_scons/configure.py,line 158:
+	Configure(confdir = build/.scons_config)
+scons: Configure: Checking for compiler -Wno-self-assign-overloaded support... 
+build/.scons_config/conftest_30.cc <-
+  |// CheckCxxFlag DO NOTHING
+(B[m [     CXX] [33m.scons_config/conftest_30[33m[1m.cc[34m[1m -> [33m[1m.o(B[m
+scons: Configure: yes
+
+
